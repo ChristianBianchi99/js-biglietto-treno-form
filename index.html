@@ -9,22 +9,31 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid background h-100">
         <div class="row">
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
             <div class="col-12">
                 <!-- INIZIO SEZIONE FORM -->
                 <form action="" class="ticket_form">
-                    <label for="nome">Nome Cognome</label>
-                    <input type="text" name="nome" id="nome">
-                    <label for="km">Km da percorrere</label>
-                    <input type="text" name="km" id="km">
-                    <label for="eta">Fascia d'età</label>
-                    <select name="eta" id="eta">
-                        <option value="none">Seleziona una fascia</option>
-                        <option value="minorenne">Minorenne</option>
-                        <option value="maggiorenne">Maggiorenne</option>
-                        <option value="over_65">Over 65</option>
-                    </select>
+                    <div class="boxs">
+                        <div class="box">
+                            <label for="nome">Nome Cognome</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <div class="box">
+                            <label for="km">Km da percorrere</label>
+                            <input type="text" name="km" id="km">
+                        </div>
+                        <div class="box">
+                            <label for="eta">Fascia d'età</label>
+                            <select name="eta" id="eta">
+                                <option value="none">Seleziona una fascia</option>
+                                <option value="minorenne">Minorenne</option>
+                                <option value="maggiorenne">Maggiorenne</option>
+                                <option value="over_65">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
                     <button type="button" id="genera">
                         Genera
                     </button>
@@ -34,10 +43,45 @@
                 </form>
                 <!-- FINE SEZIONE FORM -->
             </div>
+            <h2>IL TUO BIGLIETTO</h2>
             <div class="col-12">
                 <!-- INZIO SEZIONE TICKET -->
                 <div class="ticket">
+                    <div class="content">
+                        <h3>DETTAGLIO PASSEGGERI</h3>
+                        <div class="dettagli_passeggero">
+                            <div class="passeggero">
+                                <strong>NOME PASSEGGERO</strong>
+                                <strong id="nomePasseggero" class="block">
 
+                                </strong>
+                            </div>
+                            <div class="offerta">
+                                <strong>Offerta</strong>
+                                <div id="offerta">
+
+                                </div>
+                            </div>
+                            <div class="carrozza">
+                                <strong>Carrozza</strong>
+                                <div id="carrozza">
+
+                                </div>
+                            </div>
+                            <div class="codice">
+                                <strong>Codice CP</strong>
+                                <div id="codice">
+
+                                </div>
+                            </div>
+                            <div class="costo">
+                                <strong>Costo biglietto</strong>
+                                <div id="costo">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- FINE SEZIONE TICKET -->
             </div>
