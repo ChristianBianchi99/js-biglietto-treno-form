@@ -2,7 +2,7 @@ PROBLEMA : Calcolo del prezzo del biglietto del treno
 
 1 - Imposto una prima struttura html
 2 - Creo la logica per il calcolo del prezzo del biglietto
-    2.1 - Creo i prompt per richiedere i km che vuole percorrere l'utente e la sua età
+    2.1 - Creo gli input per richiedere i km che vuole percorrere l'utente e la sua età
     2.2 - Mi assicuro che i dati inseriti dall'utente abbiano le caratteristiche che mi servono
     2.3 - Calcolo il prezzo intero del biglietto
     2.4 - Calcolo l'eventuale sconto da applicare in base all'età
