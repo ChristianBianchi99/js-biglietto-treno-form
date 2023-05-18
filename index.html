@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="text/javascript" src="./js/script.js"></script>
+    <script defer type="text/javascript" src="./js/script.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -13,25 +13,25 @@
         <div class="row">
             <div class="col-12">
                 <!-- INIZIO SEZIONE FORM -->
-                <div class="ticket_form">
-                    <label for="nome_cognome">Nome Cognome</label>
-                    <input type="text" name="nome_cognome" id="nome_cognome">
+                <form action="" class="ticket_form">
+                    <label for="nome">Nome Cognome</label>
+                    <input type="text" name="nome" id="nome">
                     <label for="km">Km da percorrere</label>
                     <input type="text" name="km" id="km">
                     <label for="eta">Fascia d'età</label>
                     <select name="eta" id="eta">
-                        <option value="">Seleziona una fascia</option>
-                        <option value="">Minorenne</option>
-                        <option value="">Maggiorenne</option>
-                        <option value="">Over 65</option>
+                        <option value="none">Seleziona una fascia</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over_65">Over 65</option>
                     </select>
-                    <button type="submit" id="genera">
+                    <button type="button" id="genera">
                         Genera
                     </button>
                     <button type="reset" id="annulla">
                         Annulla
                     </button>
-                </div>
+                </form>
                 <!-- FINE SEZIONE FORM -->
             </div>
             <div class="col-12">
